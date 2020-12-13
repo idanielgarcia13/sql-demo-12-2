@@ -1,0 +1,10 @@
+# coding: utf-8
+import sqlite3
+conn = sqlite3.connect('books.db')
+c = conn.cursor()
+c.execute('SELECT name FROM sqlite_master WHERE type='table';')
+c.execute("SELECT name FROM sqlite_master WHERE type='table';")
+print(c.fetchall())
+c.execute('SELECT * FROM authors')
+print(c.fetchall())
+c.execute('SELECT * FROM titles').description
